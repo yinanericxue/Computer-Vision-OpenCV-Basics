@@ -64,3 +64,64 @@
 #### Closing,  Dilation -> Erode:
 ![Screen Shot 2023-12-23 at 4 37 13 PM](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/15b2d4d8-8aca-4f0b-a47b-146388f4969d)
 
+#### Top Hat,  Input - Opening
+#### Src  -  Dilation( Erode( Src,Kernel ) , Kernel )
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/ad0eebf5-5ef7-49da-a2e0-ab8410fc925a)
+
+#### Black Hat, Closing - Input
+
+#### Erode( Dilation( Src,Kernel ) , Kernel ) - Src
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/967aab13-25ea-4e37-b1cb-941993d82060)
+
+# Image Gradient
+#### Discrete Calculus
+#### https://en.wikipedia.org/wiki/Discrete_calculus![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/b8ad26e0-cc2d-4dbb-8b0a-1d5bdf897c18)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/9cab83b3-dfde-4b93-8c23-377e4f63637a)
+
+#### Image Gradient is used to extract information from an image and detect its edge
+#### gx, the image intensity changing from left to right
+#### gy, the image intensity changing from top to bottom
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/b2658a3c-5fd1-49e6-8237-ea67f4e79ce1)
+#### In the discrete case, we can only take differences at one pixel intervals .
+#### To avoid shifting the image by half a pixel, we select 2 pixel intervals.
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/3bd9fd88-f25b-4abf-b8cc-bb63aa447ccd)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/39fa5f02-67f2-44b8-964a-1fbcabb56dc4)
+
+#### Gradient Magnitude:
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/75cb0156-593f-4c38-a29e-94e9fc75b027)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/23cce259-c0ac-4368-a94c-e5dae88b42b6)
+
+#### Gradient Direction:
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/c2aa0f55-1564-48f3-a86f-8b1fbfe4afb1)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/816e820e-3efe-4abb-81d0-d7873a25e5e2)
+
+#### Image Gradient: Sobel Filter
+#### https://automaticaddison.com/how-the-sobel-operator-works/
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/cb445c42-a533-4d71-b407-57a21068dec2)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/29802ba5-ea90-45c9-b00c-eec763e533e2)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/f64cab52-4111-4ebf-affa-36bb88d69009)
+
+#### P5X / P5Y = P5's gradient towards x and y direction
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/0b3658df-474d-4c32-90d6-c8a40b85aa30)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/63305cf1-e477-4112-b4be-8afc676acc56)
+
+
+#### Image Gradient:  Sobel (first derivative),  Scharr (first derivative), Laplacian (second derivative)
+#### https://docs.opencv.org/3.4/d2/d2c/tutorial_sobel_derivatives.html
+#### https://www.projectpro.io/recipes/what-are-sobel-and-scharr-derivatives-opencv
+
+#### Laplacian
+#### https://docs.opencv.org/4.x/d5/d0f/tutorial_py_gradients.html
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/5e3386ee-0ab2-4987-b328-a5e4657cdb6b)
+
+#### ConvertScaleAbs
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/dfc5cf7f-539b-4006-93ed-282d4f2370d5)
+
+#### Color to Gray
+https://www.dynamsoft.com/blog/insights/image-processing/image-processing-101-color-space-conversion/
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/8d85b279-98ee-4ab2-8ac5-28ec95ad4e02)
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/967c424d-26c8-4e44-8e68-dabc085f92d8)
+
+#### Angle of Π
+#### https://jarnowouda.com/what-are-radians/
+![image](https://github.com/yinanericxue/Computer-Vision-OpenCV-Basics/assets/102645083/ab2727f7-90ff-4712-a540-3e095bd34ed5)
